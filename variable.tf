@@ -21,7 +21,7 @@ variable "key" {
 
 variable "bucketname" {
     description = "aws s3 bucket name creation"
-    default = "my-s3-bucket-new"
+    default = "terraform-state-lock-s3-bucket"
 }
 variable "acl" {
     default = "private"
