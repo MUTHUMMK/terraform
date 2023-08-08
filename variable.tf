@@ -17,15 +17,3 @@ variable "key" {
 }
 
 
-# s3 Bucket configuration
-
-variable "bucketname" {
-    description = "aws s3 bucket name creation"
-    default = "terraform-state-lock-s3-bucket"
-}
-variable "acl" {
-    default = "private"
-}
-variable "versioning" {
-    default = true
-}
