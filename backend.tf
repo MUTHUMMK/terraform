@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "my-aws_s3_bucket" {
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-lock-s3-bucket"
+    bucket         = "terraform-state-lock-s3-bucket-new"
     key            = "terraform-statetf"   # Change this to a unique name for each configuration
     region         = "ap-southeast-1"            # Change to your desired AWS region
     encrypt        = true                   # Set to true if you want to encrypt the state file
