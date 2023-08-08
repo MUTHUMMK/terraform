@@ -1,7 +1,7 @@
 # ec2 instance configuration
 
 variable "os" {
-    default = "ami-0df7a207adb9748c7"
+    default = "ami-0f5ee92e2d63afc18"
 }
 
 variable "size" {
@@ -13,7 +13,7 @@ variable "ec2-tags" {
     }
 }
 variable "key" {
-    default = "adi.pem"
+    default = "birth"
 }
 
 
