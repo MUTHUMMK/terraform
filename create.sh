@@ -2,7 +2,7 @@
 
 #Create  instance infrastructure 
 
-terraform init && terraform apply --auto-approve
+terraform init && terraform $option --auto-approve
 sleep 5
 
 # to get public IP and store the variable 
