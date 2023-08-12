@@ -1,8 +1,6 @@
 #!/bin/bash
 
-set -e
-
-# first create image using dockerfile
+#first create image using dockerfile
 docker build -t muthu:v1.2 .
 
 # login dockerhub & push the image 
