@@ -12,8 +12,11 @@ variable "ec2-tags" {
         Name = "MMK"
     }
 }
-variable "key" {
-    default = "birth"
+variable "ec2-tags1" {
+    default = {
+        Name = "MUTHU"
+    }
 }
-
-
+variable "key" {
+    default = "linux"
+}
