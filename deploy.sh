@@ -18,11 +18,14 @@ sudo apt-get install docker-compose -y
 
 sudo systemctl start docker
 
+sudo docker login -u $DOCKERHUBUSER -p $DOCKERHUBPSW
+
 sudo docker-compose  up -d
 
 if curl localhost:80
 then
     echo "Successfully installed"
 fi
+sudo docker logout
 
 EOF
