@@ -12,6 +12,8 @@ b=$(aws ec2 describe-instances --region ap-south-1 --filters "Name=tag:Name,Valu
 echo $a
 echo $b
 
+echo $a $b | cat > ipaddress.txt
+
 echo "Terraform Exceute Successfully"
 
 sleep 5
