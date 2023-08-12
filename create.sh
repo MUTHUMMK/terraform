@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 #Create  instance infrastructure 
 
 terraform init && terraform apply --auto-approve
@@ -13,11 +13,7 @@ b=$(aws ec2 describe-instances --region ap-south-1 --filters "Name=tag:Name,Valu
 echo $a
 echo $b
 
-
-
 echo "Terraform Exceute Successfully"
-
-
 
 # login the ssh-remote server & put the variable instead of public ip
 scp -o StrictHostKeyChecking=no -i  $sshkeyvar docker-compose.yml $ubuntu@$a:/home/ubuntu
