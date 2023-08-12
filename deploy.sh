@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-ssh -o StrictHostKeyChecking=no -i $sshkeyvar ubuntu@$a<<EOF
+ssh -o StrictHostKeyChecking=no -i $sshkeyvar $ubuntu@$a<<EOF
 
 docker login -u $DOCKERHUBUSER -p $DOCKERHUBPSW
 
