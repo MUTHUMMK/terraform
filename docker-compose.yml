@@ -1,7 +1,7 @@
 version: '3'
 services:
   apache:
-    image: muthummkdh/new2:latest
+    image: muthummkdh/new4:latest
     container_name: muthunew
     ports:
       - "80:80"
