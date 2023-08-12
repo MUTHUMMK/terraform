@@ -14,7 +14,7 @@ echo $b
 
 echo "Terraform Exceute Successfully"
 
-
+sleep 10
 
 # login the ssh-remote server & put the variable instead of public ip
 
