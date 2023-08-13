@@ -16,8 +16,8 @@ echo "$b"
 echo "Terraform Exceute Successfully"
 
 # login the ssh-remote server & put the variable instead of public ip
-scp -o StrictHostKeyChecking=no -i "$sshkeyvar" docker-compose.yml "$ubuntu"@"$a":/home/ubuntu
-ssh -o StrictHostKeyChecking=no -i "$sshkeyvar" "$ubuntu"@"$a"<<EOF
+scp -o StrictHostKeyChecking=no -i "$SSHKEY" docker-compose.yml "$ubuntu"@"$a":/home/ubuntu
+ssh -o StrictHostKeyChecking=no -i "$SSHKEY" "$ubuntu"@"$a"<<EOF
 
 ls
 
