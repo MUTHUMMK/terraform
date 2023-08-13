@@ -6,7 +6,7 @@ a=$(aws ec2 describe-instances --region ap-south-1 --filters "Name=tag:Name,Valu
 
 echo "$a"
 
-ssh -o StrictHostKeyChecking=no -i "$sshkeyvar" "$ubuntu"@"$a"<<EOF
+ssh -o StrictHostKeyChecking=no -i "$SSHKEY" "$ubuntu"@"$a"<<EOF
 
 sudo docker-compose  up -d
 
